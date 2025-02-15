@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="flex flex-col text-center items-center gap-8 mt-32 px-8">
+    <div className="flex flex-col text-center items-center gap-8 mt-16 md:mt-32 px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

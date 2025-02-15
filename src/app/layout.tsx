@@ -64,7 +64,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  themeColor: "#1F1F1F",
   verification: {
     google: "tfvypuxG6Kzvi1hj_H6r7NFqzA_eun06kzTmJsEAPs4",
   },
