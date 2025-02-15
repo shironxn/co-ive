@@ -6,7 +6,7 @@ import {
   HomeIcon,
   ImagesIcon,
   InfoIcon,
-  ShoppingCart,
+  InstagramIcon,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
@@ -22,6 +22,7 @@ import {
 import Link from "next/link";
 
 const data = {
+  instagram: "https://instagram.com/co.ivee",
   navMain: [
     {
       title: "Home",
@@ -70,7 +71,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavMain items={data.navMain} />
       </SidebarContent>
       <SidebarFooter>
-        <ShoppingCart />
+        <Link
+          href={data.instagram}
+          className="hover:text-primary/90"
+          target="_blank"
+        >
+          <InstagramIcon />
+        </Link>
       </SidebarFooter>
     </Sidebar>
   );
