@@ -2,15 +2,15 @@ import { MenuCarousel } from "@/components/menu-carousel";
 
 const data: { title: string; description: string; src: string }[] = [
   {
-    title: "Roti Coffee",
+    title: "Slick Git Fluty",
     description:
-      "Perpaduan rasa manis, asin, dan pahit khas kopi, menciptakan harmoni tradisional dan modern.",
+      "Dalgona Coffee dengan tekstur creamy dan aroma khas, menghadirkan keseimbangan rasa manis, pahit, dan gurih yang sempurna.",
     src: "/menu/1.jpeg",
   },
   {
-    title: "Roti Coffee",
+    title: "Latte Bunny",
     description:
-      "Perpaduan rasa manis, asin, dan pahit khas kopi, menciptakan harmoni tradisional dan modern.",
+      "Roti kopi dengan aroma khas dan tekstur renyah di luar, lembut di dalam. Perpaduan sempurna dengan rasa manis dan sedikit pahit yang khas.",
     src: "/menu/2.jpeg",
   },
 ];
