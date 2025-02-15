@@ -21,7 +21,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Co-ive | Sip, Savour, Repeat!",
+  title: "CO-IVE | Sip, Savour, Repeat!",
   description:
     "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
   keywords: [
@@ -36,19 +36,19 @@ export const metadata: Metadata = {
     "kopi premium",
     "kopi terbaik",
   ],
-  authors: [{ name: "Affan", url: "https://co-ive.com" }],
+  authors: [{ name: "PT. FIVELICIOUS", url: "https://co-ive.vercel.app" }],
   openGraph: {
-    title: "Co-ive | Sip, Savour, Repeat!",
+    title: "CO-IVE | Sip, Savour, Repeat!",
     description:
       "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
-    url: "https://co-ive.com",
-    siteName: "Co-ive",
+    url: "https://co-ive.vercel.app",
+    siteName: "CO-IVE",
     images: [
       {
-        url: "https://co-ive.com/og-image.jpg",
+        url: "https://co-ive.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Co-ive Coffee",
+        alt: "Co-IVE Coffee",
       },
     ],
     locale: "id_ID",
@@ -56,18 +56,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@coivecoffee",
-    creator: "@coivecoffee",
-    title: "Co-ive | Sip, Savour, Repeat!",
+    title: "CO-IVE | Sip, Savour, Repeat!",
     description:
       "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
-    images: ["https://co-ive.com/og-image.jpg"],
+    images: ["https://co-ive.vercel.app/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
   },
-  manifest: "/site.webmanifest",
+  themeColor: "#1F1F1F",
 };
 
 export default function RootLayout({
