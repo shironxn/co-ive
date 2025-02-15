@@ -26,7 +26,7 @@ export function MenuCarousel({
     <Carousel
       opts={{ loop: true }}
       plugins={[Autoplay({ delay: 1500, stopOnInteraction: true })]}
-      className="w-full max-w-xs md:max-w-md lg:max-w-lg"
+      className="w-full max-w-xs md:max-w-md lg:max-w-lg xl:max-w-2xl"
     >
       <CarouselContent>
         {data.map((item, index) => (
