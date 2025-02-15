@@ -59,7 +59,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <CoffeeIcon className="size-4" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">Coffive</span>
+                  <span className="truncate font-semibold">CO-IVE</span>
                   <span className="truncate text-xs">PT. FIVELICIOUS</span>
                 </div>
               </Link>
