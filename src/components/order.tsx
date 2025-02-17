@@ -90,6 +90,13 @@ function OrderForm({ className }: React.ComponentProps<"form">) {
     { name: "3 Roti Es Krim + 3 Dalgona", price: 62000 },
   ];
 
+  const toppings = [
+    { name: "Grass Jelly", price: 3000 },
+    { name: "Oreo Crumble", price: 3000 },
+    { name: "Boba Blast", price: 3000 },
+    { name: "Ice Cream", price: 3000 },
+  ];
+
   function createOrder(formData: FormData) {
     const adminNumber = process.env.NEXT_PUBLIC_ADMIN_NUMBER?.split(",") ?? [];
 
@@ -102,8 +109,7 @@ function OrderForm({ className }: React.ComponentProps<"form">) {
 *Nama:* ${nama}
 *Menu:* 
 ${menu.map((item, index) => `   ${index + 1}. ${item}`).join("\n")}
-*Detail:* ${detail || "-"}
-`;
+*Detail:* ${detail || "-"}`;
 
     const encodedMessage = encodeURIComponent(message);
 
@@ -114,7 +120,7 @@ ${menu.map((item, index) => `   ${index + 1}. ${item}`).join("\n")}
 
   return (
     <form
-      className={cn("grid items-start gap-4", className)}
+      className={cn("grid items-start gap-4 text-xs md:text-xs", className)}
       action={createOrder}
     >
       <div className="grid gap-2">
@@ -129,20 +135,32 @@ ${menu.map((item, index) => `   ${index + 1}. ${item}`).join("\n")}
       </div>
 
       <div className="grid gap-2">
-        <Label htmlFor="detail">Detail Pesanan</Label>
+        <Label htmlFor="detail">Detail Pesanan (Opsional)</Label>
         <Textarea
           id="detail"
           name="detail"
-          placeholder="Contoh: 2 Latte Bunny, 1 Slick Git Fluty"
+          placeholder="Contoh: 2 Latte Bunny, 1 Slick Git Fluty + Oreo Crumble"
         />
       </div>
 
       <div className="grid gap-2">
         <Label>Pilihan Menu</Label>
-        <div className="flex flex-col gap-2">
+        <div className="grid grid-cols-2 gap-2">
           {menuItems.map((item, index) => (
             <label key={index} className="flex items-center gap-2">
               <Checkbox name="menu" value={item.name} />
+              {item.name} - {item.price.toLocaleString("id-ID")}
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <div className="grid gap-2">
+        <Label>Pilihan Topping</Label>
+        <div className="grid grid-cols-2 gap-2">
+          {toppings.map((item, index) => (
+            <label key={index} className="flex items-center gap-2">
+              <Checkbox name="topping" value={item.name} />
               {item.name} - {item.price.toLocaleString("id-ID")}
             </label>
           ))}
