@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CO-IVE | Sip, Savour, Repeat!",
+    title: "CO-IVE",
     description:
       "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
     images: ["https://co-ive.vercel.app/og-image.jpg"],
