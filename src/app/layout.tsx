@@ -21,9 +21,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "CO-IVE",
+  title: "CO-IVE | Sip, Savour, Repeat!",
   description:
-    "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
+    "Menemani setiap momenmu dengan rasa kopi premium yang khas, menghadirkan pengalaman tak terlupakan di setiap tegukan.",
   keywords: [
     "kopi",
     "coffee",
@@ -36,12 +36,17 @@ export const metadata: Metadata = {
     "kopi enak",
     "kopi premium",
     "kopi terbaik",
+    "kopi lokal",
+    "cafe terbaik",
+    "coffee lovers",
+    "kopi berkualitas",
+    "kopi segar",
   ],
   authors: [{ name: "PT. FIVELICIOUS", url: "https://co-ive.vercel.app" }],
   openGraph: {
-    title: "CO-IVE",
+    title: "CO-IVE | Sip, Savour, Repeat!",
     description:
-      "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
+      "Menemani setiap momenmu dengan rasa kopi premium yang khas, menghadirkan pengalaman tak terlupakan di setiap tegukan.",
     url: "https://co-ive.vercel.app",
     siteName: "CO-IVE",
     images: [
@@ -49,21 +54,15 @@ export const metadata: Metadata = {
         url: "https://co-ive.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Co-IVE Coffee",
+        alt: "Co-IVE Coffee - Premium & Specialty Coffee",
       },
     ],
     locale: "id_ID",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "CO-IVE",
-    description:
-      "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
-    images: ["https://co-ive.vercel.app/og-image.jpg"],
-  },
   icons: {
     icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   verification: {
     google: "tfvypuxG6Kzvi1hj_H6r7NFqzA_eun06kzTmJsEAPs4",
