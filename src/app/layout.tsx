@@ -21,7 +21,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "CO-IVE | Sip, Savour, Repeat!",
+  title: "CO-IVE",
   description:
     "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
   keywords: [
