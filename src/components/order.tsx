@@ -101,14 +101,17 @@ function OrderForm({ className }: React.ComponentProps<"form">) {
     const adminNumber = process.env.NEXT_PUBLIC_ADMIN_NUMBER?.split(",") ?? [];
 
     const nama = formData.get("nama");
-    const menu = formData.getAll("menu") as string[];
     const detail = formData.get("detail");
+    const menu = formData.getAll("menu") as string[];
+    const topping = formData.getAll("topping") as string[];
 
     const message = `*Pemesanan CO-IVE*
     
 *Nama:* ${nama}
 *Menu:* 
 ${menu.map((item, index) => `   ${index + 1}. ${item}`).join("\n")}
+*Topping:* 
+${topping.length > 0 ? topping.map((item, index) => `   ${index + 1}. ${item}`).join("\n") : "-"}
 *Detail:* ${detail || "-"}`;
 
     const encodedMessage = encodeURIComponent(message);
