@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   keywords: [
     "kopi",
     "coffee",
+    "coffive",
     "co-ive",
     "best coffee",
     "premium coffee",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "PT. FIVELICIOUS", url: "https://co-ive.vercel.app" }],
   openGraph: {
-    title: "CO-IVE | Sip, Savour, Repeat!",
+    title: "CO-IVE",
     description:
       "Menemani setiap momenmu dengan rasa kopi yang unik dan tak terlupakan.",
     url: "https://co-ive.vercel.app",
