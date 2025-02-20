@@ -84,18 +84,16 @@ function OrderForm({ className }: React.ComponentProps<"form">) {
   const menuItems = [
     { name: "Latte Bunny (Roti Kopi)", price: 10000 },
     { name: "Slick Git Fluty (Dalgona Coffee)", price: 10000 },
-    { name: "Roti Es Krim + Dalgona", price: 23000 },
-    { name: "2 Dalgona + 1 Roti Es Krim", price: 33000 },
-    { name: "3 Dalgona", price: 25000 },
-    { name: "3 Roti Es Krim + 3 Dalgona", price: 62000 },
+    { name: "Latte Bunny + Slick Git Fluty w/ Grass Jelly", price: 22000 },
+    {
+      name: "1 Slick Git Fluty w/ Grass Jelly + 1 Slick Git Fluty + 1 Latte Bunny",
+      price: 30000,
+    },
+    { name: "3 Slick Git Fluty", price: 25000 },
+    { name: "3 Latte Bunny + 3 Slick Git Fluty w/ Grass Jelly", price: 62000 },
   ];
 
-  const toppings = [
-    { name: "Grass Jelly", price: 3000 },
-    { name: "Oreo Crumble", price: 3000 },
-    { name: "Boba Blast", price: 3000 },
-    { name: "Ice Cream", price: 3000 },
-  ];
+  const toppings = [{ name: "Grass Jelly", price: 3000 }];
 
   function createOrder(formData: FormData) {
     const adminNumber = process.env.NEXT_PUBLIC_ADMIN_NUMBER?.split(",") ?? [];
@@ -142,7 +140,7 @@ ${topping.length > 0 ? topping.map((item, index) => `   ${index + 1}. ${item}`).
         <Textarea
           id="detail"
           name="detail"
-          placeholder="Contoh: 2 Latte Bunny, 1 Slick Git Fluty + Oreo Crumble"
+          placeholder="Contoh: 2 Latte Bunny, 1 Slick Git Fluty"
         />
       </div>
 
@@ -159,7 +157,7 @@ ${topping.length > 0 ? topping.map((item, index) => `   ${index + 1}. ${item}`).
       </div>
 
       <div className="grid gap-2">
-        <Label>Pilihan Topping</Label>
+        <Label>Pilihan Topping (Dalgona)</Label>
         <div className="grid grid-cols-2 gap-2">
           {toppings.map((item, index) => (
             <label key={index} className="flex items-center gap-2">

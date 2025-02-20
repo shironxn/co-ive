@@ -33,7 +33,7 @@ export function MenuCarousel({
           <CarouselItem key={index}>
             <Card className="flex flex-col md:flex-row flex-wrap md:flex-nowrap gap-6 md:gap-8 justify-between">
               <CardContent className="p-0 w-full md:w-1/2 md:max-w-xs lg:max-w-sm">
-                <div className="w-full aspect-video md:aspect-[9/16] overflow-hidden rounded-lg">
+                <div className="w-full overflow-hidden rounded-lg">
                   <Image
                     src={item.src}
                     alt={item.title}

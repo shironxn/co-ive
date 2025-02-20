@@ -5,7 +5,7 @@ const data: { title: string; description: string; src: string }[] = [
     title: "Slick Git Fluty",
     description:
       "Dalgona Coffee dengan tekstur creamy dan aroma khas, menghadirkan keseimbangan rasa manis, pahit, dan gurih yang sempurna.",
-    src: "/menu/1.jpg",
+    src: "/menu/1.jpeg",
   },
   {
     title: "Latte Bunny",
